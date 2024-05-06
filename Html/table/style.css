@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+table{
+    width: 100%;
+    /* border-spacing: 60px; */
+}
+table th{
+    width: 40%;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #96D4D4;
+    /* border-radius: 10px; */
+    text-align: left;
+    padding: 10px;
+}
+.new{
+    margin-top: 30px;
+}

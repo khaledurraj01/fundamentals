@@ -1,0 +1,7 @@
+.box{
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    border: 10px solid firebrick;
+    background-color: aliceblue;
+}
