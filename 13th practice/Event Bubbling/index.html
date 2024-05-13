@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .topdiv{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .middlediv{
+            background-color: beige;
+            padding: 10px;
+        }
+        .innerdiv{
+            background-color: yellowgreen;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function topdiv(){
+            event.stopImmediatePropagation();
+            alert('topdiv')
+        }
+        function middlediv(){
+            event.stopImmediatePropagation();
+            alert('middlediv')
+        }
+        function innerdiv(){
+            event.stopImmediatePropagation();
+            alert('innerdiv')
+        }
+    </script>
+</head>
+<body>
+    <h2>Event Bubbling</h2>
+    <div onclick="topdiv()" class="topdiv">
+        topdiv
+        <div onclick="middlediv()" class="middlediv">
+            middlediv
+            <div onclick="innerdiv()" class="innerdiv"></div>
+            innerdiv
+        </div>
+    </div>
+</body>
+</html>
